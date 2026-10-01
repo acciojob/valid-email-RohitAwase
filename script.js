@@ -1,5 +1,5 @@
 function validEmail(str) {
-  //your JS code here.
+  if (typeof str !== "string" || str === "") { return false; } return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
 }
 
 // Do not change the code below.
